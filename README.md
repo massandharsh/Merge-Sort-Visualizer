@@ -1,3 +1,5 @@
+# This project creates a divide and conquer phase to visualize merge sort algorithm
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
