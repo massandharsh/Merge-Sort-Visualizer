@@ -26,7 +26,7 @@ function mergeSort(arr, start, end, l,obj) {
   }
   const mid = parseInt((start + end) / 2);
 //   console.log(obj);
-  obj.child.push(new TreeNode(obj.id + "0", arr.slice(start, mid + 1), l + 1));
+  obj.child.push(new TreeNode(obj.id + "0" + Math.random()*100, arr.slice(start, mid + 1), l + 1));
   obj.child.push(
     new TreeNode(obj.id + "1", arr.slice(mid + 1, end + 1), l + 1)
   );
@@ -62,7 +62,7 @@ function merge(arr, s1, e1, s2, e2, l, obj,child) {
     for (let s of newArray) {
       arr[s1++] = s;
     }
-    const node = new TreeNode(obj.id + "0" + l.toString(), newArray, l);
+    const node = new TreeNode(obj.id + "0" + l.toString() + Math.random()*100, newArray, l);
     // console.log(node);
     // console.log(child);
     if(child){
@@ -139,6 +139,8 @@ export default function List() {
     for(let i in l){
         levelArr[i] = l[i];
     }
+    console.log(levelArr);
+    console.log(data);
     setLevelOrder(levelArr);
     setSortedLevels(sortedLevels);
     setData(data);
