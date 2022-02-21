@@ -199,7 +199,7 @@ export default function List() {
       {levelOrderObj.map((level)=>{
             return level.map((item)=>{
               return item.child.map((finalItem)=>{
-                return <Xarrow key={Math.random()} endAnchor= { {position: "auto", offset: { x: 20 }} } path="smooth" dashness={{ strokeLen: 10, nonStrokeLen: 15, animation: 0.5 }} curveness={0.2} gridBreak='100' start = {item.id} end = {finalItem.id}/>
+                return <Xarrow key={Math.random()} zIndex="-1" endAnchor= { {position: "auto", offset: { x: 20 }} } path="smooth" dashness={{ strokeLen: 10, nonStrokeLen: 15, animation: 0.5 }} curveness={0.2} gridBreak='100' start = {item.id} end = {finalItem.id} animateDrawing={true}/>
               });
             })
       })}
