@@ -1,4 +1,4 @@
-#This project creates a divide and conquer phase to visualize merge sort algorithm
+# This project creates a divide and conquer phase to visualize merge sort algorithm
 
 # Getting Started with Create React App
 
